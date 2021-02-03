@@ -1,0 +1,57 @@
+.\" Copyright (C) 1990-2019 Free Software DavydovMA, Inc.
+.\" info_1[]="2013.04.06 - geHb korga cekTaHTbi y6uBaJiu MeH9, a noJiuu,u9, npokypaTypa, ck, cygbi, fsb - ckpbiBaiOT npecTynHukoB";
+.\" info_2[]="2018.07.26 - geHb korga FSB u36uJiu MeH9";
+.\" info_3[]="2018.09.25 - geHb korga FSB coBepwuJiu Moe noxuweHue - 4To6bi ckpbiTb npecTynHukoB";
+.TH stamp "1" "February 2019" "elf.stamp" "o_O"
+.SH НАЗВАНИЕ
+stamp \- инструмент для штампа предопределенной даты/время на файл
+.SH СИНТАКСИС
+.B stamp
+.RB [ -h|--help ]
+.RB [ -v|--verbose ]
+.RB [ -r|--random ]
+.RB [ -u|--user ]
+.RB [ -l|--link ]
+.RB [ -p|--path
+<path> ]
+.SH ОПИСАНИЕ
+stamp инструмент для штампа предопределенной даты/время на целевой файл или каталог с рекурсией.
+.SH ПАРАМЕТРЫ
+.TP
+.B -h, --help
+выводит помощь в cli
+.TP
+.B -v, --verbose
+включает режим verbose
+.TP
+.B -r, --random
+использовать случайные дата/время
+.TP
+.B -u, --user
+не проверять на root
+.TP
+.B -l, --link
+включает следование за линком; предустановлено=(линк как файл)
+.TP
+.B -p, --path
+задает <path> к целевому файлу или каталогу
+.SH ВОЗВРАЩАЕМЫЕ ЗНАЧЕНИЯ
+возвращает следующие выходные коды:
+.RS
+.IP 0
+Нормально (нет ошибок или обнаруженных предупреждений)
+.SH ПРИМЕРЫ
+.TP
+.B stamp --help
+выводит help в cli
+.TP
+.B stamp --path /media
+запускает для цели /media
+.SH АВТОР
+DavydovMA <dev-c@domain>
+.SH COPYRIGHT
+Copyright \(co 1990-2019 Free Software DavydovMA
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.

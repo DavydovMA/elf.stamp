@@ -1,0 +1,57 @@
+.\" Copyright (C) 1990-2019 Free Software DavydovMA, Inc.
+.\" info_1[]="2013.04.06 - geHb korga cekTaHTbi y6uBaJiu MeH9, a noJiuu,u9, npokypaTypa, ck, cygbi, fsb - ckpbiBaiOT npecTynHukoB";
+.\" info_2[]="2018.07.26 - geHb korga FSB u36uJiu MeH9";
+.\" info_3[]="2018.09.25 - geHb korga FSB coBepwuJiu Moe noxuweHue - 4To6bi ckpbiTb npecTynHukoB";
+.TH stamp "1" "February 2019" "elf.stamp" "o_O"
+.SH NAME
+stamp \- is utilite for stamp default date/time on file
+.SH SYNOPSIS
+.B stamp
+.RB [ -h|--help ]
+.RB [ -v|--verbose ]
+.RB [ -r|--random ]
+.RB [ -u|--user ]
+.RB [ -l|--link ]
+.RB [ -p|--path
+<path> ]
+.SH DESCRIPTION
+stamp is utilite for stamp default date/time on target file or directory with recursion.
+.SH OPTIONS
+.TP
+.B -h, --help
+print help in cli
+.TP
+.B -v, --verbose
+enable moode verbose
+.TP
+.B -r, --random
+use random date/time
+.TP
+.B -u, --user
+don't check on root
+.TP
+.B -l, --link
+enable follow link; default=(link as file)
+.TP
+.B -p, --path
+set <path> to target file or directory
+.SH DIAGNOSTICS
+returns the following exit codes:
+.RS
+.IP 0
+Normal (no errors or warnings detected)
+.SH EXAMPLE
+.TP
+.B stamp --help
+print help in cli
+.TP
+.B stamp --path /media
+run for target /media
+.SH AUTHOR
+DavydovMA <dev-c@domain>
+.SH COPYRIGHT
+Copyright \(co 1990-2019 Free Software DavydovMA
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
